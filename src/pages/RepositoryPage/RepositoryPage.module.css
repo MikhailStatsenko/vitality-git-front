@@ -1,0 +1,14 @@
+.layout {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    @apply flex flex-col items-center bg-white;
+}
+
+.breadcrumb {
+    width: 60%;
+}
+
+.content {
+    margin: 0;
+    width: 60%;
+}

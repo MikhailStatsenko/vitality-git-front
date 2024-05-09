@@ -1,0 +1,5 @@
+.pre {
+    @apply overflow-x-scroll;
+    /*@apply overflow-x-hidden;*/
+    width: 50vw;
+}

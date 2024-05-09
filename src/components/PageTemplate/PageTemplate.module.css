@@ -1,0 +1,38 @@
+.pageContainer {
+    @apply w-full min-h-screen overflow-hidden bg-white;
+}
+
+.content {
+    @apply w-full;
+}
+
+.header {
+    @apply w-full text-base bg-amber-400 flex items-center px-12;
+    height: 7vh;
+    border-bottom: 2px solid black;
+}
+
+.header h1 {
+    @apply font-semibold text-3xl mr-auto;
+}
+
+.header h1 a:hover {
+    @apply text-black;
+}
+
+.headerMenu {
+    transition: 0.5s ease-in-out;
+}
+
+.headerLink {
+    text-decoration: underline;
+}
+
+.headerLink:hover {
+    color: #e6e6e6;
+    text-decoration: underline;
+}
+
+.separator {
+    @apply mx-1.5
+}

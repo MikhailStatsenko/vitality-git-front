@@ -1,0 +1,27 @@
+.container {
+    @apply flex flex-row w-full;
+}
+
+.cardLeft {
+    @apply w-full border-0 rounded-none pl-6 pt-3 bg-white;
+}
+
+.usersList {
+    @apply w-full pb-0;
+}
+
+/* Поиск */
+.search {
+    @apply flex w-full h-fit;
+}
+
+.search input {
+    border: 1px solid black;
+    @apply rounded-br-none rounded-tr-none border-r-0;
+    width: 40vw;
+}
+
+.search button {
+    border: 1px solid black;
+    @apply rounded-tl-none rounded-bl-none text-black;
+}

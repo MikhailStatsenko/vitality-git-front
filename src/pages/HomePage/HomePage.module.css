@@ -1,0 +1,61 @@
+.container {
+    @apply flex flex-row w-full;
+    height: calc(93vh - 1rem - 10px);
+}
+
+.cardLeft {
+    @apply w-1/2 border-0 rounded-none pl-6 pt-3;
+    border-right: 1px solid black;
+}
+
+.cardRight {
+    @apply w-1/2 border-0 rounded-none pr-6 pt-3;
+    border-left: 1px solid black;
+}
+
+
+.usersList {
+    @apply overflow-y-scroll w-full overflow-x-visible px-4;
+    height: 72vh;
+}
+
+/* Поиск */
+.search {
+    @apply flex w-full h-fit;
+}
+
+.search input {
+    border: 1px solid black;
+    @apply rounded-br-none rounded-tr-none border-r-0;
+    width: 40vw;
+}
+
+.search button {
+    border: 1px solid black;
+    @apply rounded-tl-none rounded-bl-none text-black;
+}
+
+
+/* Создание репозитория */
+.repositories {
+    @apply overflow-y-scroll text-base;
+}
+
+.addRepository {
+    @apply flex w-80
+}
+
+.addRepository > * {
+    @apply mb-0 pt-1
+}
+
+.addRepository input {
+    border: 1px solid black;
+    @apply rounded-br-none rounded-tr-none border-r-0;
+    width: 20vw;
+}
+
+.addRepository button {
+    border: 1px solid black;
+    @apply rounded-tl-none rounded-bl-none text-black flex items-center justify-center;
+}

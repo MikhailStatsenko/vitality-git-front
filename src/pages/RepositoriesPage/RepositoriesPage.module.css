@@ -1,0 +1,31 @@
+.container {
+    @apply flex flex-row w-full;
+}
+
+.cardRight {
+    @apply w-full border-0 rounded-none pl-6 pt-3 bg-white;
+}
+
+/* Создание репозитория */
+.repositories {
+    @apply overflow-y-scroll text-base;
+}
+
+.addRepository {
+    @apply flex w-80
+}
+
+.addRepository > * {
+    @apply mb-0 pt-1
+}
+
+.addRepository input {
+    border: 1px solid black;
+    @apply rounded-br-none rounded-tr-none border-r-0;
+    width: 20vw;
+}
+
+.addRepository button {
+    border: 1px solid black;
+    @apply rounded-tl-none rounded-bl-none text-black flex items-center justify-center;
+}

@@ -1,0 +1,11 @@
+.formCard {
+    @apply max-w-lg mx-auto mt-20 border-black border-2
+}
+
+.input {
+    @apply border-black border-2
+}
+
+.button {
+    @apply w-full border-black border-2
+}
