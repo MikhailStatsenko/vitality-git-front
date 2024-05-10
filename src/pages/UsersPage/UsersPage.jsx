@@ -1,10 +1,10 @@
 import React, {useCallback, useContext, useEffect, useState} from 'react';
 import {Context} from "../../index";
 import PageTemplate from "../../components/PageTemplate/PageTemplate";
-import {Button, Card, Divider, Empty, Form, Input, List, message, Space} from "antd";
+import {Button, Card, Form, Input, message, Space} from "antd";
 import st from "./UsersPage.module.css"
 import {observer} from "mobx-react-lite";
-import {Navigate, useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 
 const UsersPage = () => {
@@ -67,7 +67,7 @@ const UsersPage = () => {
     }
 
     return (
-        <PageTemplate title="Home">
+        <PageTemplate title="Пользователи">
             <div className={st.container}>
                 <Card title="Пользователи" className={st.cardLeft}
                       loading={usersLoading}

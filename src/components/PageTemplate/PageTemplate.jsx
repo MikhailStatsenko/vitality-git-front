@@ -30,7 +30,7 @@ const PageTemplate = ({children, title}) => {
                 <div className={st.headerMenu}>
                     {store.isAuth ? (
                         <>
-                            {store.isAuth && <span>{user.username}</span>}
+                            {store.isAuth && <span>{user?.username}</span>}
                             <Link to="/" className={st.headerLink} onClick={store.logout}>(Выйти)</Link>
                         </>
                     ) : (

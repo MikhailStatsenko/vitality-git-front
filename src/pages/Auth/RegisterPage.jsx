@@ -20,7 +20,7 @@ const RegisterPage = () => {
     }, [navigate, store.isAuth]);
 
     return (
-        <PageTemplate>
+        <PageTemplate title={"Регистрация"}>
             <Card className={st.formCard} title={'Регистрация'}
                   styles={{
                       header: {

@@ -99,7 +99,7 @@ const RepositoryPage = () => {
     }));
 
     return (
-        <PageTemplate>
+        <PageTemplate title={"Репозиторий " + path.split("/")[1]}>
             <Layout className={st.layout}>
                 <Breadcrumb
                     className={st.breadcrumb}
@@ -117,15 +117,6 @@ const RepositoryPage = () => {
                     {repositoryLoading ? (
                         <Spin size="large" />
                     ) : isReadingFile ? (
-                        // <Card title="Содержимое файла"
-                        //       styles = {{
-                        //           body: {
-                        //               paddingTop: 10,
-                        //           }
-                        //       }}
-                        // >
-                        //         <pre>{fileContent}</pre>
-                        // </Card>
                         <FileViewer fileContent={fileContent}></FileViewer>
                     ) : (
                         <Table

@@ -51,7 +51,7 @@ const RepositoriesPage = () => {
     }
 
     return (
-        <PageTemplate title="Home">
+        <PageTemplate title={"Репозитории пользователя " + username}>
             <div className={st.container}>
                 <Card title={!store.isAuth ?
                     "Репозитории" : store.user.username === username ?

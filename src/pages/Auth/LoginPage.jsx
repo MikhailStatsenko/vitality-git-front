@@ -20,7 +20,7 @@ const LoginPage = () => {
     }, [navigate, store.isAuth]);
 
     return (
-        <PageTemplate>
+        <PageTemplate title={"Вход"}>
             <Card className={st.formCard} title={'Вход в аккаунт'}
                   styles={{
                       header: {
