@@ -1,8 +1,16 @@
-FROM node:22-alpine
+FROM node:current-slim
 
-COPY . .
-RUN npm install
+WORKDIR /client
 
-EXPOSE 3000
+COPY /src /client/src
+COPY /public /client/public
+COPY tailwind.config.js /client/
+COPY package.json /client/
 
-CMD ["npm", "start"]
+RUN npm install -g bun
+RUN bun install
+RUN npm run build
+
+EXPOSE 80
+
+CMD ["npm", "run", "start"]
