@@ -1,6 +1,5 @@
 import {makeAutoObservable} from "mobx";
 import $api from "../../http";
-import {message} from "antd";
 import AppStore from "../AppStore";
 
 export default class FileStore {

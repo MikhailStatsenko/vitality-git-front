@@ -1,12 +1,11 @@
 import React, {useCallback, useContext, useEffect, useState} from 'react';
 import {Context} from "../../index";
 import PageTemplate from "../../components/PageTemplate/PageTemplate";
-import {Button, Card, Divider, Empty, Form, Input, List, Space} from "antd";
+import {Button, Card, Empty, Form, Input, List, Space} from "antd";
 import st from "./HomePage.module.css"
 import {Link} from "react-router-dom";
-import Search from "antd/es/input/Search";
 import {observer} from "mobx-react-lite";
-import {PlusCircleOutlined, PlusCircleTwoTone, PlusOutlined} from "@ant-design/icons";
+import {PlusOutlined} from "@ant-design/icons";
 
 
 const HomePage = () => {

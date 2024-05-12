@@ -1,10 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {Context} from "../../index";
 import PageTemplate from "../../components/PageTemplate/PageTemplate";
-import {Breadcrumb, Card, Col, Layout, Row, Spin, Table, Typography} from "antd";
+import {Breadcrumb, Layout, Spin, Table} from "antd";
 import st from "./RepositoryPage.module.css"
 import {observer} from "mobx-react-lite";
-import {Link, useLocation, useNavigate, useParams} from "react-router-dom";
+import {Link, useLocation, useParams} from "react-router-dom";
 import {FileOutlined, FolderOutlined} from "@ant-design/icons";
 import FileViewer from "../../components/FileViewer/FileViewer";
 
