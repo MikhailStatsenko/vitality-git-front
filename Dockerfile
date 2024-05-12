@@ -11,6 +11,6 @@ RUN npm install -g bun
 RUN bun install
 RUN npm run build
 
-EXPOSE 80
+EXPOSE 3000
 
 CMD ["npm", "run", "start"]
