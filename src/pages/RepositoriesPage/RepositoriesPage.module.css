@@ -12,7 +12,7 @@
 }
 
 .addRepository {
-    @apply flex w-80
+    @apply flex w-80;
 }
 
 .addRepository > * {
@@ -22,7 +22,6 @@
 .addRepository input {
     border: 1px solid black;
     @apply rounded-br-none rounded-tr-none border-r-0;
-    width: 20vw;
 }
 
 .addRepository button {

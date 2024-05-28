@@ -3,11 +3,13 @@ import {makeAutoObservable} from "mobx";
 import {message, notification} from "antd";
 import FileStore from "./modules/FileStore";
 import CommandsStorage from "./modules/CommandsStorage";
+import BranchStore from "./modules/BranchStore";
 
 
 export default class AppStore {
     users = new UserStore(this);
     files = new FileStore(this);
+    branches = new BranchStore(this);
     commands = new CommandsStorage(this);
 
     userState = null;
@@ -79,16 +81,16 @@ export default class AppStore {
                     }
                     break;
                 case 403:
-                    message.error('Недостаточно прав');
+                    message.error('Ошибка доступа');
                     break;
                 case 404:
                     message.error('Не найдено');
                     break;
-                default:
-                    notification.error({
-                        message: e.response.data.title,
-                        description: e.response.data.detail,
-                    }, 10);
+                // default:
+                //     notification.error({
+                //         message: e.response.data.title,
+                //         description: e.response.data.detail,
+                //     }, 10);
             }
         } else {
             message.error(msg);

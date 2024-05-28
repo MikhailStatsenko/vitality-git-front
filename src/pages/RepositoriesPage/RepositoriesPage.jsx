@@ -71,7 +71,9 @@ const RepositoriesPage = () => {
                       extra={
                           store.user.username === username &&
                           <Form form={addRepository} onFinish={handleAddRepository} className={st.addRepository} >
-                              <Form.Item name="repositoryName">
+                              <Form.Item name="repositoryName" rules={[
+
+                              ]}>
                                   <Input placeholder="Название нового репозитория" />
                               </Form.Item>
                               <Form.Item>
